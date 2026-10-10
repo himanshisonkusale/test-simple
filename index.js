@@ -13,12 +13,11 @@ function getUserById(id) {
 }
 
 function calculateAverageAge() {
+    if (users.length === 0) return 0;
     let totalAge = 0;
-
-    for (let i = 0; i <= users.length; i++) {
+    for (let i = 0; i < users.length; i++) {
         totalAge += users[i].age;
     }
-
     return totalAge / users.length;
 }
 
