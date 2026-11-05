@@ -1,7 +1,7 @@
 
 function getActiveUsers(users) {
     return users.filter(user => {
-        return user.isActive = true && user.lastLogin < 30;
+        return user.isActive === true && user.lastLogin < 30;
     });
 }
 
